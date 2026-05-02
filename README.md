@@ -1,156 +1,113 @@
-PQC Toolkit — Post‑Quantum Cryptography Migration Tool
+# 🛡️ PQC Toolkit — Post-Quantum Cryptography Migration Tool
 
-A modular, practical toolkit designed to help developers and organizations identify, analyze, and migrate away from classical cryptography toward post‑quantum‑safe algorithms.
+A modular cybersecurity toolkit designed to help developers and organizations detect, analyze, and migrate from classical cryptographic algorithms (RSA, ECC, SHA-1, etc.) to post-quantum safe alternatives.
 
-Built with Python, Streamlit, and a structured scanning engine.
+Built using **Python**, **Streamlit**, and a structured scanning engine.
 
+---
 
+## 🚀 Features
 
-🚀 Features
+### 🔍 Cryptography Scanner
+- Detects vulnerable classical algorithms such as:
+  - RSA (weak key sizes)
+  - ECC (elliptic curve usage)
+  - SHA-1 hashing
+- Identifies non-post-quantum safe implementations
 
-🔍 Cryptography Scanner
+### 📊 Security Dashboard
+- Interactive Streamlit dashboard
+- Visual breakdown of cryptographic risks
+- Highlights “quantum-unsafe” components
 
-Detects RSA, ECC, SHA‑1, weak key sizes
+### 🧠 Migration Suggestions
+- Recommends PQC alternatives such as:
+  - Kyber (ML-KEM) → Key Encapsulation
+  - Dilithium → Digital Signatures
+  - Falcon → Compact signatures
 
+### 📁 Report Generation
+- Generates structured reports of vulnerabilities
+- Summarizes crypto risks in scanned systems
 
+---
 
-Flags non‑PQC‑safe algorithms
+## 🏗️ Tech Stack
 
+- Python 🐍
+- Streamlit 📊
+- Pandas 📑
+- JSON Configuration System ⚙️
+- Plotly (for visualizations) 📈
 
+---
 
-Scans entire codebases or specific directories
+## 📂 Project Structure
 
-
-
-Outputs structured JSON results
-
-
-
-📊 Streamlit Dashboard
-
-Clean UI for viewing scan results
-
-
-
-Visual summaries of findings
-
-
-
-Easy navigation for non‑technical users
-
-
-
-Launch with one command:
-
-
-
-bash
-
-streamlit run dashboard/app.py
-
-📚 Knowledge Base
-
-Contains PQC algorithm references
-
-
-
-Migration recommendations
-
-
-
-Notes from NIST PQC standardization
-
-
-
-🖥️ CLI Tool
-
-Run scans directly from the terminal:
-
-
-
-bash
-
-python pqc\_cli.py --path <target\_folder>
-
-📂 Project Structure
-
-Code
-
-pqc\_toolkit/
-
+pqc_toolkit/
 │
-
-├── dashboard/          # Streamlit UI
-
-│   └── app.py
-
+├── dashboard/
+│ └── app.py # Streamlit dashboard
 │
-
-├── engine/             # Core scanning engine
-
-├── scanner/            # Detection logic
-
-├── knowledge\_base/     # PQC references
-
-├── data/               # Sample data
-
-├── tests/              # Unit tests
-
+├── scanner/
+│ └── crypto_scanner.py # Detection engine
 │
-
-├── pqc\_cli.py          # Command-line interface
-
-├── generate\_sample.py  # Sample data generator
-
+├── data/
+│ └── mappings.json # PQC migration mappings
+│
+├── reports/
+│ └── output_reports/ # Generated scan reports
+│
 └── README.md
 
-▶️ Running the Dashboard
 
-bash
+---
 
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+git clone https://github.com/yourusername/pqc-toolkit.git
+cd pqc-toolkit
+2. Install dependencies
+pip install -r requirements.txt
+3. Run the dashboard
 streamlit run dashboard/app.py
 
-🧪 Running a Scan
+📸 Screenshots
 
-bash
-
-python pqc\_cli.py --path ./your\_project
-
-📦 Installation
-
-Install dependencies:
+![Post-Quantum Migration Dashboard](assets/dashboard.png)
+![PQC Dashboard Metrics](assets/dashboard-metrics.png)
 
 
+🎯 Use Case
 
-bash
+This tool is useful for:
 
-pip install -r requirements.txt
+Cybersecurity interns & students
+Organizations preparing for post-quantum transition
+Security audits of cryptographic systems
+Academic research on PQC migration
+🧪 Example Output
+[WARNING] RSA-2048 detected → Vulnerable to quantum attacks
+[SUGGESTION] Replace with ML-KEM (Kyber)
+🔐 Future Improvements
+Automated TLS certificate scanning
+Real-time system integration
+CI/CD pipeline security checks
+Expanded PQC algorithm database
+👩‍💻 Author
 
-🛡️ Why Post‑Quantum Migration Matters
+Thirishaa
+Cybersecurity Enthusiast | Developer | Future Security Engineer
 
-Classical cryptography (RSA, ECC) will be breakable by future quantum computers.
+📌 Disclaimer
 
-This toolkit helps developers:
-
-
-
-Identify vulnerable cryptographic usage
-
-
-
-Understand PQC‑safe alternatives
-
-
-
-Begin migration early
-
-
-
-Reduce “harvest‑now, decrypt‑later” risk
+This tool is for educational and research purposes only. It does not guarantee full production-grade cryptographic security validation.
 
 
+---
 
-📜 License
-
-MIT License.
-
+If you want, I can also:
+✔ :contentReference[oaicite:0]{index=0}  
+✔ :contentReference[oaicite:1]{index=1}  
+✔ or :contentReference[oaicite:2]{index=2}
