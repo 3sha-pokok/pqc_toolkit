@@ -75,8 +75,10 @@ streamlit run dashboard/app.py
 
 📸 Screenshots
 
-![Post-Quantum Migration Dashboard](assets/dashboard.png)
-![PQC Dashboard Metrics](assets/dashboard-metrics.png)
+![Post-Quantum Migration Dashboard](<img width="1353" height="492" alt="image" src="https://github.com/user-attachments/assets/e8ec64d3-4c7e-4f33-b803-56741be86e84" />
+)
+![PQC Dashboard Metrics](<img width="1028" height="547" alt="image" src="https://github.com/user-attachments/assets/49de36a4-b9ee-47fd-8feb-1faaeea2fbcc" />
+)
 
 
 🎯 Use Case
